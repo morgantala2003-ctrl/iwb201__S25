@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>الوجبات</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js"></script>
+</head>
+
+<body>
+    <nav><a href="index.html">الرئيسية</a><a href="aboutus.html">من نحن</a><a href="meals.html">الوجبات</a></nav>
+    <div class="container">
+        <h2>الوجبات</h2>
+        <table>
+            <tr>
+                <th>الرقم</th>
+                <th>اسم الوجبة</th>
+                <th>السعر (ل.س)</th>
+                <th>إظهار التفاصيل</th>
+                <th>اختيار</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>وجبة سمك بوري مشوي لشخصين</td>
+                <td class="price">110000</td>
+                <td><button onclick="toggleDetails('d1')">تفاصيل</button></td>
+                <td><input type="checkbox" class="check"></td>
+            </tr>
+            <tr id="d1" class="details">
+                <td colspan="5">
+                    <div class="details-box">
+                        <img src="Images/image_1.jpg" alt="سمك بوري مشوي">
+                        <div class="details-text">
+                            <h3>المطبخ: السوري</h3>
+                            <p>تصنيف الطعام: مأكولات بحرية</p>
+                            <p>المكونات:</p>
+                            <ul>
+                                <li>4 سمكات بوري أحمر، مغسولة ومُنظفة</li>
+                                <li>بضعة أوراق من الزعتر الطازج</li>
+                                <li>1 ملعقة صغيرة من الملح</li>
+                                <li>1 ملعقة صغيرة من الفلفل الأسود المطحون</li>
+                                <li>1 ملعقة كبيرة من زيت الزيتون</li>
+                                <li>3 فصوص ثوم مفرومة</li>
+                                <li>فلفل أحمر طازج مقطع</li>
+                                <li>بضعة أغصان من إكليل الجبل</li>
+                                <li>6 حبات طماطم طرية مقطعة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>وجبة مشاوي مشكلة</td>
+                <td class="price">95000</td>
+                <td><button onclick="toggleDetails('d2')">تفاصيل</button></td>
+                <td><input type="checkbox" class="check"></td>
+            </tr>
+            <tr id="d2" class="details">
+                <td colspan="5">
+                    <div class="details-box">
+                        <img src="Images/image_2.jpg" alt="مشاوي مشكلة">
+                        <div class="details-text">
+                            <h3>المطبخ: شرقي</h3>
+                            <p>تصنيف الطعام: مشاوي</p>
+                            <p>تفاصيل الوجبة:</p>
+                            <ul>
+                                <li>لحم ضأن متبل</li>
+                                <li>قطع دجاج ستيك مغلية</li>
+                                <li>شيش طاووق</li>
+                                <li>خضار مشوية</li>
+                                <li>بطاطا محمرة وزعتر</li>
+                                <li>صلصة طحينة وسلطة خضراء</li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>وجبة كبسة دجاج</td>
+                <td class="price">85000</td>
+                <td><button onclick="toggleDetails('d3')">تفاصيل</button></td>
+                <td><input type="checkbox" class="check"></td>
+            </tr>
+            <tr id="d3" class="details">
+                <td colspan="5">
+                    <div class="details-box">
+                        <img src="Images/image_3.jpg" alt="كبسة دجاج">
+                        <div class="details-text">
+                            <h3>المطبخ: عربي</h3>
+                            <p>تصنيف الطعام: أطباق رئيسية</p>
+                            <p>المكونات:</p>
+                            <ul>
+                                <li>دجاجة كاملة متبلة برز ومدهونة</li>
+                                <li>أرز بسمتي</li>
+                                <li>بهارات كبسة خاصة</li>
+                                <li>صنوبر ومكسرات محمصة</li>
+                                <li>مرق لذيذ بالطماطم والبصل</li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>بيتزا فاخرة</td>
+                <td class="price">72000</td>
+                <td><button onclick="toggleDetails('d4')">تفاصيل</button></td>
+                <td><input type="checkbox" class="check"></td>
+            </tr>
+            <tr id="d4" class="details">
+                <td colspan="5">
+                    <div class="details-box">
+                        <img src="Images/image_4.jpg" alt="بيتزا فاخرة">
+                        <div class="details-text">
+                            <h3>المطبخ: إيطالي</h3>
+                            <p>تصنيف الطعام: سريعة</p>
+                            <p>المكونات:</p>
+                            <ul>
+                                <li>عجينة طازجة</li>
+                                <li>صلصة طماطم مميزة</li>
+                                <li>جبنة موزاريلا</li>
+                                <li>فلفل ألوان، زيتون، مشروم</li>
+                                <li>زيت زيتون وأوريجانو</li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>سلطة تونة</td>
+                <td class="price">45000</td>
+                <td><button onclick="toggleDetails('d5')">تفاصيل</button></td>
+                <td><input type="checkbox" class="check"></td>
+            </tr>
+            <tr id="d5" class="details">
+                <td colspan="5">
+                    <div class="details-box">
+                        <img src="Images/image_5.jpg" alt="سلطة تونة">
+                        <div class="details-text">
+                            <h3>المطبخ: صحي</h3>
+                            <p>تصنيف الطعام: سلطة</p>
+                            <p>المكونات:</p>
+                            <ul>
+                                <li>تونة معلبة</li>
+                                <li>خس طازج وخضار مشكلة</li>
+                                <li>طماطم وخيار وجزر مبشور</li>
+                                <li>زيت زيتون وليمون</li>
+                                <li>بهارات خفيفة وخل بلسمي</li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button class="primary-btn" onclick="showForm()">متابعة</button>
+        <div id="orderForm" class="form-box" style="display:none;">
+            <h3>نموذج الطلب</h3>
+            <form onsubmit="return validateForm()">
+                <input type="text" id="name" placeholder="الاسم الكامل باللغة الإنجليزية">
+                <input type="text" id="bank" placeholder="رقم الحساب المصرفي (6 أرقام)" required>
+                <input type="text" id="date" placeholder="dd-mm-yyyy">
+                <input type="text" id="phone" placeholder="رقم الموبايل">
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
